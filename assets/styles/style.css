@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,400&family=Dancing+Script:wght@600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,400&family=Dancing+Script:wght@600;700&display=swap");
 
 * {
   margin: 0;
@@ -38,9 +38,8 @@ body {
   font-weight: 700;
   letter-spacing: 0.1px;
   font-size: 40px;
-  font-weight: 700;
-  font-family: 'Bitter', serif;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Bitter", serif;
+  font-family: "Dancing Script", cursive;
 }
 
 .collaps-navbar {
@@ -90,7 +89,7 @@ body {
   font-weight: 700;
   text-align: center;
   border: none;
-  background: #23A6F0;
+  background: #23a6f0;
   color: #fff;
   cursor: pointer;
 }
@@ -129,6 +128,7 @@ h1 {
 
 .maincontainer {
   width: 100%;
+
   /* height: 100vh; */
   background: #222;
   padding-top: 20px;
@@ -147,7 +147,8 @@ h1 {
   max-height: 96vh;
 }
 
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
   color: #fff;
 }
 
