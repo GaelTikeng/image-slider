@@ -152,7 +152,7 @@ h1 {
 }
 
 .swiper .swiper-pagination-bullet-active {
-  background: blue;
+  background: #000;
 }
 
 .myswiper {
