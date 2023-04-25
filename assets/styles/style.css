@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,400&family=Dancing+Script:wght@600;700&display=swap");
 
 * {
   margin: 0;
@@ -6,10 +6,132 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #252b42;
+  color: #fff;
+}
+
+#header-11 {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  width: 100%;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: #252b42;
+}
+
+.navbar h3 {
+  width: fit-content;
+  padding: 15px 100px 15px 0;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  font-size: 40px;
+  font-family: "Bitter", serif;
+  font-family: "Dancing Script", cursive;
+}
+
+.collaps-navbar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  display: flex;
+  padding: 18px 0;
+}
+
+.navbar-nav li {
+  text-decoration: none;
+  list-style: none;
+  padding: 17px 0;
+}
+
+.navbar-nav li a {
+  padding: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.navbar-login {
+  padding-right: 50px;
+}
+
+.navbar-login span {
+  cursor: pointer;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.navbar-login span:hover {
+  color: #b8dbe9;
+}
+
+.become-a-member {
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  background: #23a6f0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.become-a-member:hover {
+  transform: translateY(3px);
+  opacity: 0.9;
+}
+
+.navbar-login i {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-login,
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar h3 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+h1 {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 40px;
+}
+
 .maincontainer {
   width: 100%;
-  height: 100vh;
+
+  /* height: 100vh; */
   background: #222;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,12 +144,26 @@
 
 .swiper-slide img {
   width: 100%;
+  max-height: 96vh;
 }
 
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
   color: #fff;
 }
 
 .swiper .swiper-pagination-bullet-active {
   background: #000;
+}
+
+.myswiper {
+  width: 70%;
+  margin: 0 auto;
+  height: fit-content;
+}
+
+.myswiper1 {
+  width: 70%;
+  margin: 0 auto;
+  height: fit-content;
 }

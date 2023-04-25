@@ -11,6 +11,30 @@
   <title>image slider</title>
 </head>
 <body>
+  <!-- navbar-->
+  <div class="navbar">
+    <h3>HoliDays</h3>
+    <div class="collaps-navbar">
+      <div class="navbar-nav">
+        <li>
+          <a href="#">Stays</a>
+        </li>
+        <li>
+          <a href="#">Flights</a>
+        </li>
+        <li>
+          <a href="#">Car rentals</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
+      </div>
+      <div class="navbar-login">
+        <span>Login</span>
+        <button class="become-a-member">Register <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
   <div class="maincontainer">
     <div class="swiper">
       <!-- Additional required wrapper -->
@@ -47,28 +71,99 @@
 
 
   </div>
+
+  <h1>Have a good stay in our rooms</h1>
+
+  <div class="maincontainer">
+    <div class="myswiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./assets/images/room10.jpeg" alt="luxury_home">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room11.jpeg" alt="luxary home">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room12.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room2.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room3.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room5.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room8.jpg" alt="">
+        </div>
+
+      </div>
+      <!-- pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+
+  </div>
+
+  <h1>VIP meeting hall</h1>
+
+  <div class="maincontainer">
+    <div class="myswiper1">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./assets/images/meetx.jpg" alt="luxury_home">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/meetx1.jpg" alt="luxary home">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m1.jpeg" alt="meeting hall">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m2.jpg" alt="meeting hall">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m3.jpg" alt="meetinghall">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m4.jpg" alt="meetinghall">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m5.jpg" alt="meetinghall">
+        </div>
+        
+
+      </div>
+      <!-- pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+
+  </div>
+
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      loop: true,
-
-      // navigation
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-
-      //navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    })
+  <script src="main.js">
+    
       
   </script>
 </body>
