@@ -37,7 +37,7 @@ body {
   padding: 15px 100px 15px 0;
   font-weight: 700;
   letter-spacing: 0.1px;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   font-family: 'Bitter', serif;
   font-family: 'Dancing Script', cursive;
@@ -62,15 +62,22 @@ body {
 }
 
 .navbar-nav li a {
-  padding: 0 5px;
+  padding: 0 15px;
   color: #fff;
   text-decoration: none;
   list-style: none;
-  font-size: 16px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.navbar-login {
+  padding-right: 50px;
 }
 
 .navbar-login span {
   cursor: pointer;
+  font-size: 20px;
+  padding-right: 20px;
 }
 
 .navbar-login span:hover {
@@ -81,6 +88,7 @@ body {
   border-radius: 5px;
   padding: 15px;
   font-weight: 700;
+  text-align: center;
   border: none;
   background: #23A6F0;
   color: #fff;
