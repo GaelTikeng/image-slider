@@ -71,6 +71,95 @@
 
 
   </div>
+
+  <h1>Have a good stay in our rooms</h1>
+
+  <div class="maincontainer">
+    <div class="myswiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./assets/images/room10.jpeg" alt="luxury_home">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room11.jpeg" alt="luxary home">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room12.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room2.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room3.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room5.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/room8.jpg" alt="">
+        </div>
+
+      </div>
+      <!-- pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+
+  </div>
+
+  <h1>VIP meeting hall</h1>
+
+  <div class="maincontainer">
+    <div class="myswiper1">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./assets/images/meetx.jpg" alt="luxury_home">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/meetx1.jpg" alt="luxary home">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m1.jpeg" alt="meeting hall">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m2.jpg" alt="meeting hall">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m3.jpg" alt="meetinghall">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m4.jpg" alt="meetinghall">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/m5.jpg" alt="meetinghall">
+        </div>
+        
+
+      </div>
+      <!-- pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+
+  </div>
+
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
@@ -88,6 +177,48 @@
       },
 
       //navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+
+    const swipper = new Swiper('.myswiper1', {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      effect: "cube",
+      grabcursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 10,
+        shadowScale: 0.50,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+
+    let swiper2 = new Swiper(".myswiper", {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      effect: "cards",
+      grabCusor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
