@@ -1,5 +1,3 @@
-// get the DOM elements
-
 const wrapper = document.querySelector(".wrapper"),
   carousel = document.querySelector(".carousel"),
   images = document.getElementsByTagName("img")[0],
@@ -20,16 +18,15 @@ const arrImages = [
 let imageIndex = 0,
   intervalId;
 
-// Define function to automatic image slider
+// Define function to automatic image slider. Change the slide every 3s
 
 const autoSlide = () => {
-  // start slide by calling slideImage() every 2 seconds
-  intervalId = setInterval(() => slideImage(), 2000);
+
+  intervalId = setInterval(() => slideImage(), 3000);
 };
-// call autoSlider
 autoSlide();
 
-//A function a that updates the carousel display to show the specified image
+//A function that updates the carousel display to show the specified image
 const slideImage = () => {
   images.src = arrImages[imageIndex];
   imageIndex = imageIndex === arrImages.length - 1 ? 0 : imageIndex + 1;
@@ -52,7 +49,6 @@ nextBtn.addEventListener("click", () => {
   if (imageIndex === arrImages.length - 1) {
     imageIndex = 0;
   }
-//   console.log(imageIndex);
 });
 
 
@@ -64,4 +60,3 @@ prevBtn.addEventListener("click", () => {
 
     }
 });
-Footer
