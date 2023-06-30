@@ -22,7 +22,7 @@ let imageIndex = 0,
 
 const autoSlide = () => {
 
-  intervalId = setInterval(() => slideImage(), 3000);
+  intervalId = setInterval(() => slideImage(), 5000);
 };
 autoSlide();
 
