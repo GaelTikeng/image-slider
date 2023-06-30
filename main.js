@@ -1,61 +1,67 @@
-const swiper = new Swiper('.swiper', {
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  loop: true,
+// get the DOM elements
 
-  // navigation
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+const wrapper = document.querySelector(".wrapper"),
+  carousel = document.querySelector(".carousel"),
+  images = document.getElementsByTagName("img")[0],
+  buttons = document.querySelectorAll(".button"),
+  prevBtn = document.getElementById("prev"),
+  nextBtn = document.getElementById("next");
 
-  //navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-})
+const arrImages = [
+  "./assets/images/m1.jpeg",
+  "./assets/images/m2.jpg",
+  "./assets/images/m3.jpg",
+  "./assets/images/room2.jpeg",
+  "./assets/images/room3.jpeg",
+  "./assets/images/room9.jpg",
+  "./assets/images/room12.jpg",
+];
 
-const swipper = new Swiper('.myswiper1', {
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-  loop: true,
-  effect: "cube",
-  grabcursor: true,
-  cubeEffect: {
-    shadow: true,
-    slideShadows: true,
-    shadowOffset: 10,
-    shadowScale: 0.50,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-})
+let imageIndex = 0,
+  intervalId;
 
-let swiper2 = new Swiper(".myswiper", {
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  loop: true,
-  effect: "cards",
-  grabCusor: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-})
+// Define function to automatic image slider
+
+const autoSlide = () => {
+  // start slide by calling slideImage() every 2 seconds
+  intervalId = setInterval(() => slideImage(), 2000);
+};
+// call autoSlider
+autoSlide();
+
+//A function a that updates the carousel display to show the specified image
+const slideImage = () => {
+  images.src = arrImages[imageIndex];
+  imageIndex = imageIndex === arrImages.length - 1 ? 0 : imageIndex + 1;
+
+    if (imageIndex === arrImages.length - 1) {
+      imageIndex = 0;
+    } 
+};
+
+// add eventlistener to wrapper to stop slide on mouseover
+wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
+// add eventlistener to wrapper to resume slide on mouseleave
+wrapper.addEventListener("mouseleave", autoSlide);
+
+
+// add the click event listener to update images onclick
+nextBtn.addEventListener("click", () => {
+  images.src = arrImages[(imageIndex += 1)];
+  // implementing the restart when images reaches the last
+  if (imageIndex === arrImages.length - 1) {
+    imageIndex = 0;
+  }
+//   console.log(imageIndex);
+});
+
+
+prevBtn.addEventListener("click", () => {
+    images.src = arrImages[(imageIndex -= 1)];
+    if (imageIndex === 0){
+        imageIndex=arrImages.length-1
+  console.log(imageIndex);
+
+    }
+});
+Footer
