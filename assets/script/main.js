@@ -1,3 +1,4 @@
+// Catching elements of the DOM
 const wrapper = document.querySelector(".wrapper"),
   carousel = document.querySelector(".carousel"),
   images = document.getElementsByTagName("img")[0],
@@ -5,6 +6,7 @@ const wrapper = document.querySelector(".wrapper"),
   prevBtn = document.getElementById("prev"),
   nextBtn = document.getElementById("next");
 
+  // defining an array of images
 const arrImages = [
   "./assets/images/m1.jpeg",
   "./assets/images/m2.jpg",
@@ -18,10 +20,9 @@ const arrImages = [
 let imageIndex = 0,
   intervalId;
 
-// Define function to automatic image slider. Change the slide every 3s
+// Define function to automatic image slider. Change the slide every 5s
 
 const autoSlide = () => {
-
   intervalId = setInterval(() => slideImage(), 5000);
 };
 autoSlide();
