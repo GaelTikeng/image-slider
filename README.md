@@ -8,4 +8,4 @@ Image slider scrolls automatically after 5s and when it reaches the last image, 
 Image slider was built with
 * HTML
 * CSS
-* Javascript.
+* JavaScript.
