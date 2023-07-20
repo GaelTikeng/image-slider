@@ -37,12 +37,12 @@ const slideImage = () => {
 }
 
 // add eventlistener to wrapper to stop slide on mouseover
-wrapper.addEventListener("mouseover", () => clearInterval(intervalId))
+wrapper.addEventListener('mouseover', () => clearInterval(intervalId))
 // add eventlistener to wrapper to resume slide on mouseleave
-wrapper.addEventListener("mouseleave", autoSlide)
+wrapper.addEventListener('mouseleave', autoSlide)
 
 // add the click event listener to update images onclick
-nextBtn.addEventListener("click", () => {
+nextBtn.addEventListener('click', () => {
   images.src = arrImages[(imageIndex += 1)]
   // implementing the restart when images reaches the last
   if (imageIndex === arrImages.length - 1) {
@@ -50,7 +50,7 @@ nextBtn.addEventListener("click", () => {
   }
 })
 
-prevBtn.addEventListener("click", () => {
+prevBtn.addEventListener('click', () => {
   images.src = arrImages[(imageIndex -= 1)];
   if (imageIndex === 0){
     imageIndex=arrImages.length - 1
