@@ -1,12 +1,10 @@
 // Catching elements of the DOM
 const wrapper = document.querySelector('.wrapper')
-const carousel = document.querySelector('.carousel')
-const images = document.getElementsByTagName('mg')[0]
-const buttons = document.querySelectorAll('.button')
+const images = document.getElementsByTagName('img')[0]
 const prevBtn = document.getElementById('prev')
 const nextBtn = document.getElementById('next')
 
-  // defining an array of images
+// defining an array of images
 const arrImages = [
   './assets/images/m1.jpeg',
   './assets/images/m2.jpg',
@@ -32,8 +30,8 @@ const slideImage = () => {
   images.src = arrImages[imageIndex]
   imageIndex = imageIndex === arrImages.length - 1 ? 0 : imageIndex + 1
   if (imageIndex === arrImages.length - 1) {
-    imageIndex = 0;
-  } 
+    imageIndex = 0
+  }
 }
 
 // add eventlistener to wrapper to stop slide on mouseover
@@ -51,8 +49,8 @@ nextBtn.addEventListener('click', () => {
 })
 
 prevBtn.addEventListener('click', () => {
-  images.src = arrImages[(imageIndex -= 1)];
-  if (imageIndex === 0){
-    imageIndex=arrImages.length - 1
+  images.src = arrImages[(imageIndex -= 1)]
+  if (imageIndex === 0) {
+    imageIndex = arrImages.length - 1
   }
 })
