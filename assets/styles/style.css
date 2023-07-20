@@ -38,7 +38,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.1px;
   font-size: 40px;
-  font-family: "Bitter", serif;
+  font-family: Bitter, serif;
   font-family: "Dancing Script", cursive;
 }
 
@@ -144,12 +144,12 @@ body {
   z-index: 100;
 }
 
-.wrapper i.button:hover {
-  background-color: #252b42;
-}
-
 i.button:active {
   transform: scale(0.94) translateY(-50%);
+}
+
+.wrapper i.button:hover {
+  background-color: #252b42;
 }
 
 i#prev {
@@ -164,7 +164,6 @@ i#next {
   height: 100%;
   margin: 0 auto;
   width: 96%;
-  /* max-width: 500px; */
   width: 100%;
   overflow: hidden;
 }
