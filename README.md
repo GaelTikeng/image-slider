@@ -1,4 +1,4 @@
-title: Image-slide 
+[Context: "title: Image-slide"]
 
 ## About the project
 Image-slider is used to cycle through images. It can be used to as a photo galery.
