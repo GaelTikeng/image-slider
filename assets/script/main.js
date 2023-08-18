@@ -21,7 +21,7 @@ let intervalId
 // Define function to automatic image slider. Change the slide every 5s
 
 const autoSlide = () => {
-  intervalId = setInterval(() => slideImage(), 5000)
+  intervalId = setInterval(() => slideImage(), 3000)
 }
 autoSlide()
 
