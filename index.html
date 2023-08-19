@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 
@@ -11,64 +12,49 @@
   <title>image slider</title>
 </head>
 <body>
-  <div class="maincontainer">
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="./assets/images/ext/luxury_home.jpg" alt="luxury_home">
-        </div>
-        <div class="swiper-slide">
-          <img src="./assets/images/ext/R.jpeg" alt="luxary home">
-        </div>
-        <div class="swiper-slide">
-          <img src="./assets/images/ext/maxresdefault.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="./assets/images/ext/R (1).jpeg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="./assets/images/263.jpg" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="./assets/images/ext/luxury-homes-196730579.jpg" alt="">
-        </div>
-
+  <!-- navbar-->
+  <div class="navbar">
+    <h3>HoliDays</h3>
+    <div class="collaps-navbar">
+      <div class="navbar-nav">
+        <li>
+          <a href="#">Stays</a>
+        </li>
+        <li>
+          <a href="#">Flights</a>
+        </li>
+        <li>
+          <a href="#">Car rentals</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
       </div>
-      <!-- pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
+      <div class="navbar-login">
+        <span>Login</span>
+        <button class="become-a-member">Register <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+      </div>
     </div>
-
-
   </div>
+
+  <div class="body">
+    <section class="wrapper">
+      <i class="fa-solid fa-arrow-left button" id="prev"></i>
+      <div class="image-container">
+        <div class="carousel">
+          <img src="./assets/images/m1.jpeg" alt="" />
+        </div>
+      </div>
+      <i class="fa-solid fa-arrow-right button" id="next"></i>
+    </section>
+
+    <script src="./index.js"></script>
+  </div>
+
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      loop: true,
-
-      // navigation
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-
-      //navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    })
+  <script src="./assets/script/main.js">
+    
       
   </script>
 </body>
